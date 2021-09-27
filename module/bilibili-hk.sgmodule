@@ -1,0 +1,10 @@
+#!name=bilibili港澳台
+#!desc=针对港澳台限定番剧进行特定域名解锁，需要MitM及信任证书
+#!system=ios
+
+[Rule]
+DOMAIN-SUFFIX,app.bilibili.com,BILIBILI
+URL-REGEX,^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season,BILIBILI
+
+[MITM]
+hostname = api.bilibili.com
